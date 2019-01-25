@@ -1,0 +1,7 @@
+js:
+- jquery.js
+- popper.js
+- bootstrap.js
+
+scss:
+- hugomodo-bootstrap.scss
