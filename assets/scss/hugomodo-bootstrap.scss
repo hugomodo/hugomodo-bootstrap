@@ -1,1 +1,53 @@
 @import "bootstrap/bootstrap";
+
+
+body > header {
+  @extend .navbar, .fixed-top, .navbar-expand-lg, .navbar-dark, .bg-primary;
+  strong#siteTitle {
+    display: inline;
+    font-size: 1em;
+    margin: 0;
+    font-weight:400;
+    a { @extend .navbar-brand; }
+  }
+  ul {
+    @extend .navbar-nav;
+    li {
+      @extend .nav-item;
+      a {
+        @extend .nav-link;
+      }
+    }
+  }
+}
+
+body > footer {
+  @extend .container-fluid;
+  > #footerWrapper {
+    @extend .row, .bg-dark, .text-light;
+    > *:not(#copyrightNotice) {
+      @extend .col-md, .p-4;
+    }
+    > #copyrightNotice {
+      @extend .col-md-12, .text-center;
+    }
+  }
+}
+
+main {
+  @extend .container;
+  margin-top:76px;
+}
+
+img {
+  @extend .img-fluid;
+}
+
+nav#breadcrumbNav {
+  ul, ol {
+    @extend .breadcrumb;
+    li {
+      @extend .breadcrumb-item;
+    }
+  }
+}
