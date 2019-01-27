@@ -3,7 +3,7 @@
 
 body > header {
   @extend .navbar, .fixed-top, .navbar-expand-lg, .navbar-dark, .bg-primary;
-  strong#siteTitle {
+  strong#hugoModule-siteTitle {
     display: inline;
     font-size: 1em;
     margin: 0;
@@ -23,12 +23,12 @@ body > header {
 
 body > footer {
   @extend .container-fluid;
-  > #footerWrapper {
+  > #hugoModule-siteFooterWrapper {
     @extend .row, .bg-dark, .text-light;
-    > *:not(#copyrightNotice) {
+    > *:not(#hugoModule-siteFooterCopyright) {
       @extend .col-md, .p-4;
     }
-    > #copyrightNotice {
+    > #hugoModule-siteFooterCopyright {
       @extend .col-md-12, .text-center;
     }
   }
@@ -43,7 +43,7 @@ img {
   @extend .img-fluid;
 }
 
-nav#breadcrumbNav {
+nav.hugoComponent-breadcrumbNav {
   ul, ol {
     @extend .breadcrumb;
     li {
