@@ -1,7 +1,7 @@
 @import "bootstrap/bootstrap";
 
 
-body > header {
+header#hugoModule-siteHeader {
   @extend .navbar, .fixed-top, .navbar-expand-lg, .navbar-dark, .bg-primary;
   strong#hugoModule-siteTitle {
     display: inline;
@@ -21,7 +21,7 @@ body > header {
   }
 }
 
-body > footer {
+footer#hugoModule-siteFooter {
   @extend .container-fluid;
   > #hugoModule-siteFooterWrapper {
     @extend .row, .bg-dark, .text-light;
