@@ -15,7 +15,7 @@ article:not(.author) {
   }
 }
 
-article.author > .hugoComponent-authorWrapper {
+article.author {
   @extend .d-flex, .flex-row, .flex-wrap, .justify-content-between, .mb-4;
   > * {
     order: 2;
