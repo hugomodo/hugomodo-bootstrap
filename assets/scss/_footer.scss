@@ -1,0 +1,15 @@
+footer#hugoModule-siteFooter {
+  @extend .container-fluid;
+  > #hugoModule-siteFooterWrapper {
+    @extend .row, .bg-dark, .text-light;
+    > *:not(#hugoModule-siteFooterCopyright) {
+      @extend .col-md, .p-4;
+    }
+    > #hugoModule-siteFooterCopyright {
+      @extend .col-md-12, .text-center;
+    }
+    a {
+      @extend .text-white;
+    }
+  }
+}

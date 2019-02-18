@@ -1,0 +1,20 @@
+header#hugoModule-siteHeader {
+  @extend .navbar, .fixed-top, .navbar-expand-lg, .navbar-dark, .bg-primary;
+  strong#hugoModule-siteTitle {
+    display: inline;
+    font-size: 1em;
+    margin: 0;
+    font-weight:400;
+    a { @extend .navbar-brand; }
+  }
+  nav { @extend .collapse, .navbar-collapse; }
+  ul {
+    @extend .navbar-nav;
+    li {
+      @extend .nav-item;
+      a {
+        @extend .nav-link;
+      }
+    }
+  }
+}

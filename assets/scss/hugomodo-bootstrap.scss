@@ -2,44 +2,26 @@
 
 @import "bootstrap/bootstrap";
 
+@import "navbar";
+
+@import "footer";
+
 @import "articles";
 
-header#hugoModule-siteHeader {
-  @extend .navbar, .fixed-top, .navbar-expand-lg, .navbar-dark, .bg-primary;
-  strong#hugoModule-siteTitle {
-    display: inline;
-    font-size: 1em;
-    margin: 0;
-    font-weight:400;
-    a { @extend .navbar-brand; }
-  }
-  ul {
-    @extend .navbar-nav;
-    li {
-      @extend .nav-item;
-      a {
-        @extend .nav-link;
-      }
-    }
-  }
-}
+@import "meta";
 
-footer#hugoModule-siteFooter {
-  @extend .container-fluid;
-  > #hugoModule-siteFooterWrapper {
-    @extend .row, .bg-dark, .text-light;
-    > *:not(#hugoModule-siteFooterCopyright) {
-      @extend .col-md, .p-4;
-    }
-    > #hugoModule-siteFooterCopyright {
-      @extend .col-md-12, .text-center;
-    }
-  }
+@import "authors";
+
+body {
+  background-color: $light;
 }
 
 main {
-  @extend .container;
+  background-color: $white;
+  // Add navbar 56px plus 20px margin
   margin-top:76px;
+  margin-bottom:20px;
+  @extend .pt-3, .pb-3;
 }
 
 img {

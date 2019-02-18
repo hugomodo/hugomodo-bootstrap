@@ -1,0 +1,13 @@
+.hugoComponent-articleMeta{
+  @extend .container;
+  > dl {
+    @extend .d-flex, .flex-row, .flex-wrap, .justify-content-between, .row;
+    > div {
+      @extend .col-sm-6, .col-md-3, .col-lg;
+      // @extend .card, .text-light, .bg-secondary, .col-12, .my-2;
+      a { /* @extend .text-white; */ }
+      > dt { /* @extend .card-header; */ }
+      > dd { /* @extend .card-body; */ }
+    }
+  }
+}
